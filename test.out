@@ -1,8 +1,8 @@
 goos: linux
 goarch: amd64
 cpu: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
-BenchmarkAdd-12                       	43917723	        26.99 ns/op
-BenchmarkAddConcurrentNoPointer-12    	  539341	      2116 ns/op
-BenchmarkAddConcurrentPointer-12      	  547882	      2135 ns/op
+BenchmarkAdd-12                       	41647503	        28.89 ns/op
+BenchmarkAddConcurrentNoPointer-12    	  537688	      2240 ns/op
+BenchmarkAddConcurrentPointer-12      	  458768	      2264 ns/op
 PASS
-ok  	command-line-arguments	3.579s
+ok  	command-line-arguments	3.536s
