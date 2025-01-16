@@ -3,7 +3,6 @@ package main
 import (
 	"benchwithshell/internal"
 	"fmt"
-	"log"
 )
 
 func main() {
@@ -16,24 +15,23 @@ func main() {
 			index = i
 		}
 	}
-	fmt.Println(v)
-	log.Print(r.Name[index])
+	fmt.Printf("fastest result:\n%s : %.2f ns/op\n", r.Name[index], r.Runtime[index])
 }
 
 /*
 bench calc
 
 	timeStart := time.Now()
-	result := benchmarkS.Add()
+	result := benchmark.Add()
 	log.Printf("Add runtime :%v,result:%d", time.Since(timeStart).Microseconds(), result)
 
 	timeStart2 := time.Now()
 	result = 0
-	benchmarkS.AddConcurrentPointer(&result)
+	benchmark.AddConcurrentPointer(&result)
 	log.Printf("AddConcurrentPointer runtime:%v,result:%d", time.Since(timeStart2).Microseconds(), result)
 
 	timeStart3 := time.Now()
-	res := benchmarkS.AddConcurrentNoPointer()
+	res := benchmark.AddConcurrentNoPointer()
 	log.Printf("AddConcurrentNoPointer runtime:%v, result:%d", time.Since(timeStart3).Microseconds(), res)
 
 */

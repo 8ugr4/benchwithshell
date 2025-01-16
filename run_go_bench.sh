@@ -1,5 +1,6 @@
 #!/bin/sh
 LOG_FILE="test.out"
-go test -bench=. > $LOG_FILE
-go run ./internal/parse.go
+BENCHFILES_DIR="benchmark"
+go test -bench=. "$BENCHFILES_DIR"/* > $LOG_FILE
+go run main.go
 # chmod 755 <script-name>.sh -> makes the text file executable

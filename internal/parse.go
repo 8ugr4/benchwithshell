@@ -32,7 +32,7 @@ func ParseResults() *Results {
 		allWords := strings.Split(line, "\t")
 		for i, word := range allWords {
 			if strings.HasPrefix(word, "Benchmark") {
-				r.Name = append(r.Name, allWords[i])
+				r.Name = append(r.Name, strings.TrimSpace(allWords[i]))
 				convInt, err := strconv.ParseInt(strings.TrimSpace(allWords[i+1]), 10, 64)
 				if err != nil {
 					panic(err)
