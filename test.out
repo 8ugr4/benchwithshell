@@ -1,3 +1,3 @@
-BenchmarkAdd-12                       	37136222	        31.98 ns/op	       0 B/op	       0 allocs/op
-BenchmarkAddConcurrentNoPointer-12    	  536115	      2312 ns/op	      64 B/op	       4 allocs/op
-BenchmarkAddConcurrentPointer-12      	  510248	      2290 ns/op	      64 B/op	       4 allocs/op
+BenchmarkAdd-12                       	41150298	        29.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAddConcurrentNoPointer-12    	  562209	      2329 ns/op	      64 B/op	       4 allocs/op
+BenchmarkAddConcurrentPointer-12      	  446260	      2244 ns/op	      64 B/op	       4 allocs/op

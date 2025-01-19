@@ -1,4 +1,4 @@
-package benchmark
+package add
 
 import "sync"
 
